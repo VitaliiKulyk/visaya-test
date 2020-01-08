@@ -1,12 +1,3 @@
 module.exports = {
-	configureWebpack: {
-		devServer: {
-			headers: {
-				'Content-Type': 'application/json',
-				'Access-Control-Allow-Origin': '*',
-				'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, PATCH, OPTIONS',
-				'Access-Control-Allow-Headers': 'X-Requested-With, content-type, Authorization'
-			}
-		}
-	}
+	publicPath: process.env.NODE_ENV === 'production' ? '/visaya-test/' : '/',
 };
