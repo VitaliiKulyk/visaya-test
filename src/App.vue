@@ -1,23 +1,17 @@
 <template>
   <div id="app">
-    <!-- <ProductList /> -->
     <Configurator />
   </div>
 </template>
 
 <script>
-// import ProductList from "./components/ProductList.vue";
 import Configurator from "./components/Configurator.vue";
 
 export default {
   name: "app",
   components: {
-    // ProductList,
     Configurator
   },
-  created: function() {
-    // this.$store.dispatch("loadItems");
-  }
 };
 </script>
 
