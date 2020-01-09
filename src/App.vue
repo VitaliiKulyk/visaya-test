@@ -1,20 +1,22 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <ProductList />
+    <!-- <ProductList /> -->
+    <Configurator />
   </div>
 </template>
 
 <script>
-import ProductList from "./components/ProductList.vue";
+// import ProductList from "./components/ProductList.vue";
+import Configurator from "./components/Configurator.vue";
 
 export default {
   name: "app",
   components: {
-    ProductList
+    // ProductList,
+    Configurator
   },
   created: function() {
-    this.$store.dispatch("loadItems");
+    // this.$store.dispatch("loadItems");
   }
 };
 </script>
